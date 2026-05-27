@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sound Portfolio – Jerónimo Cardona Giraldo</title>
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- NavBar -->
+  <nav id="navbar">
+    <div class="nav-inner">
+      <a href="#inicio" class="nav-logo gradient-text">Sound Portfolio</a>
+      <ul class="nav-links">
+        <li><a href="#inicio"      class="nav-link">Inicio</a></li>
+        <li><a href="#sobre-mi"    class="nav-link">Sobre Mí</a></li>
+        <li><a href="#habilidades" class="nav-link">Habilidades</a></li>
+        <li><a href="#proyectos"   class="nav-link">Proyectos</a></li>
+        <li><a href="#contacto"    class="nav-link">Contacto</a></li>
+      </ul>
+      <button id="hamburger" aria-label="Abrir menú">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+    <div id="mobile-menu">
+      <ul>
+        <li><a href="#inicio">Inicio</a></li>
+        <li><a href="#sobre-mi">Sobre Mí</a></li>
+        <li><a href="#habilidades">Habilidades</a></li>
+        <li><a href="#proyectos">Proyectos</a></li>
+        <li><a href="#contacto">Contacto</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Hero -->
+  <section id="inicio">
+    <h1 class="hero-name gradient-text animate__animated animate__fadeInDown">Jerónimo Cardona</h1>
+    <h2 class="hero-title animate__animated animate__fadeIn animate__delay-1s">Sound Designer &amp; Audio Engineer</h2>
+    <p class="hero-desc animate__animated animate__fadeIn animate__delay-1s">
+      Creando experiencias sonoras inmersivas para videojuegos, cine y medios interactivos.
+      Especializado en diseño sonoro, audio espacial y postproducción.
+    </p>
+    <div class="hero-btns animate__animated animate__fadeInUp animate__delay-1s">
+      <a href="#proyectos" class="btn-primary">Ver Proyectos <i class="fa-solid fa-chevron-down"></i></a>
+      <a href="MiCV.pdf" download class="btn-secondary">Descargar CV <i class="fa-solid fa-file-arrow-down"></i></a>
+    </div>
+    <a href="#sobre-mi" class="scroll-arrow"><i class="fa-solid fa-chevron-down"></i></a>
+  </section>
+
+  <!-- About me -->
+  <section id="sobre-mi">
+    <div class="sobre-inner">
+      <h2 class="section-title" data-aos="fade-up">Sobre Mí</h2>
+      <div class="sobre-grid">
+        <div class="profile-wrap" data-aos="fade-right">
+          <img src="Mifoto3.jpg" alt="">
+        </div>
+        <div class="sobre-text" data-aos="fade-left">
+          <p>Estudiante de Ingeniería de Sonido con sólida formación técnica en postproducción de audio para medios audiovisuales e industria musical. Domino herramientas profesionales como Pro Tools, Reaper, REW y programación en Pure Data, con conocimientos avanzados en manejo de equipos de grabación, en edición, mezcla y diseño sonoro.</p>
+          <p>Especializado en crear paisajes sonoros que potencien la narrativa audiovisual, con especial enfoque en la atención al detalle y la coherencia estética de cada proyecto. Hago parte de dos semilleros de investigación en entornos sonoros inmersivos y en producciones de audio binaural. </p>
+          <p> Me caracterizo por trabajar en conjunto y busco activamente integrarme a un equipo donde pueda aportar mi capacidad creativa, gestión eficiente del tiempo y compromiso genuino con la excelencia, mientras continúo desarrollándome profesionalmente.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Habilidades -->
+  <section id="habilidades">
+    <div class="habilidades-inner">
+      <h2 class="section-title" data-aos="fade-up">Habilidades</h2>
+      <div class="skills-grid">
+        <div class="skill-card" data-aos="fade-up" data-aos-delay="0">
+          <div class="skill-card-header">
+            <div class="skill-icon icon-blue"><i class="fa-solid fa-music"></i></div>
+            <h3>Audio &amp; DAW Tools</h3>
+          </div>
+          <div class="skill-badges">
+            <span class="badge">Pro Tools</span><span class="badge">Reaper</span>
+            <span class="badge">FMOD</span><span class="badge">iZotope RX</span>
+          </div>
+        </div>
+        <div class="skill-card" data-aos="fade-up" data-aos-delay="100">
+          <div class="skill-card-header">
+            <div class="skill-icon icon-purple"><i class="fa-solid fa-code"></i></div>
+            <h3>Programming / Technical</h3>
+          </div>
+          <div class="skill-badges">
+            <span class="badge">MATLAB</span><span class="badge">Pure Data</span>
+            <span class="badge">PlugData</span><span class="badge">Max/MSP</span>
+            <span class="badge">Python</span><span class="badge">C++</span>
+          </div>
+        </div>
+        <div class="skill-card" data-aos="fade-up" data-aos-delay="200">
+          <div class="skill-card-header">
+            <div class="skill-icon icon-pink"><i class="fa-solid fa-wand-magic-sparkles"></i></div>
+            <h3>Creative Skills</h3>
+          </div>
+          <div class="skill-badges">
+            <span class="badge">Sound Design</span><span class="badge">Audio Editing</span>
+            <span class="badge">Game Audio</span><span class="badge">Field Recording</span>
+            <span class="badge">Foley</span><span class="badge">Mixing &amp; Mastering</span>
+            <span class="badge">Spatial Audio</span><span class="badge">Music Composition</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROYECTOS -->
+  <!--
+    CÓMO FUNCIONA EL MODAL:
+    Cada botón "Más información" tiene atributos data-* con la info del proyecto.
+    El JS lee esos datos y los inyecta en el modal. Así un solo modal sirve para los 6 proyectos.
+
+    data-title     → título del proyecto
+    data-desc      → descripción larga
+    data-img       → URL de la imagen
+    data-tags      → tags separados por coma
+    data-link      → URL del demo (pon la URL real de tu proyecto aquí)
+  -->
+  <section id="proyectos">
+    <div class="proyectos-inner">
+      <h2 class="section-title" data-aos="fade-up">Proyectos</h2>
+      <div class="projects-grid">
+
+        <!-- Proyecto 1 -->
+        <div class="project-card" data-aos="fade-up" data-aos-delay="0">
+          <div class="card-img-wrap">
+            <img src="Aves.jpg" alt="">
+          </div>
+          <div class="card-body">
+            <h3>Cortometraje Documental "Aves y Felinos"</h3>
+            <p>Grabación en campo, operador de boom, edición y postproducción de sonido para un corto-documental</p>
+            <div class="card-tags">
+              <span class="card-tag">Field Recording</span>
+              <span class="card-tag">Audio editing</span>
+              <span class="card-tag">Reaper</span>
+            </div>
+            <button class="btn-demo" data-modal
+              data-title="Cortometraje Documental: Aves y Felinos"
+              data-desc="Grabación en campo y captura de aves para un documental universitario, edición de cada audio de la grabación, etiquetado y clasificación de cada ave encontrada."
+              data-img="Felinos.jpg"
+              data-tags="Field Recording, Audio editing, Sound library, Reaper, Boom operator"
+              data-link="https://drive.google.com/file/d/1OmMRJ1PkzqbGijkMNitj2Xhooxys7Kum/view">
+              <i class="fa-solid fa-arrow-up-right-from-square"></i> Más información
+            </button>
+          </div>
+        </div>
+
+        <!-- Proyecto 2 -->
+        <div class="project-card" data-aos="fade-up" data-aos-delay="100">
+          <div class="card-img-wrap">
+            <img src="Explora.jpg" alt="">
+          </div>
+          <div class="card-body">
+            <h3>Residencia exploratorio: "Fricciones espectrales"</h3>
+            <p>Instalación de Radioarte Interactiva</p>
+            <div class="card-tags">
+              <span class="card-tag">Max/MSP</span>
+              <span class="card-tag">Sound Design</span>
+              <span class="card-tag">Reaper</span>
+            </div>
+            <button class="btn-demo" data-modal
+              data-title="Residencia exploratorio: Fricciones espectrales"
+              data-desc="Instalación de Radioarte interactiva, uso de Arduino, circuitos, Patch para espacialización en Max/MSP, taller sobre audio binaural"
+              data-img="Exploravol2.jpeg"
+              data-tags="Max/MSP, Sound Design, Audio Programming, Sound Installation, Binaural, Arduino"
+              data-link="https://www.instagram.com/p/DLfs2c2xgdi/">
+              <i class="fa-solid fa-arrow-up-right-from-square"></i> Más información
+            </button>
+          </div>
+        </div>
+
+        <!-- Proyecto 3 -->
+        <div class="project-card" data-aos="fade-up" data-aos-delay="200">
+          <div class="card-img-wrap">
+            <img src="SuperMario.png" alt="">
+          </div>
+          <div class="card-body">
+            <h3>Audio Re-Design Super Mario Nivel 1-2</h3>
+            <p>Re-Design de todos los sonidos del nivel 1-2 de Mario en Unity</p>
+            <div class="card-tags">
+              <span class="card-tag">Sound Design</span>
+              <span class="card-tag">Foley</span>
+              <span class="card-tag">Reaper</span>
+              <span class="card-tag">Unity</span>
+            </div>
+            <button class="btn-demo" data-modal
+              data-title="Audio Re-Design Super Mario Nivel 1-2"
+              data-desc="Re-Design de todos los SFX, música y ambientes de Super Mario creando un ambiente de terror, implementación en Unity"
+              data-img="ReaperMario.png"
+              data-tags="Sound Design, Foley, Unity, Reaper"
+              data-link="https://drive.google.com/file/d/12WniWibB9FKdRpED0VOx8gSqxb6Wack7/view?usp=sharing">
+              <i class="fa-solid fa-arrow-up-right-from-square"></i> Más información
+            </button>
+          </div>
+        </div>
+
+        <!-- Proyecto 4 -->
+        <div class="project-card" data-aos="fade-up" data-aos-delay="0">
+          <div class="card-img-wrap">
+            <img src="Corto.jpg" alt="Postproducción Cortometraje">
+          </div>
+          <div class="card-body">
+            <h3>Postproducción de Cortometraje: Los Recuerdos se Enredan entre las Llamas</h3>
+            <p>Diseño sonoro, editor de sonido, grabación y artista Foley</p>
+            <div class="card-tags">
+              <span class="card-tag">Reaper</span>
+              <span class="card-tag">Sound Design</span>
+              <span class="card-tag">Foley</span>
+            </div>
+            <button class="btn-demo" data-modal
+              data-title="Postproducción de Cortometraje: Los Recuerdos se Enredan entre las Llamas"
+              data-desc="Trabajo completo de postproducción de sonido para un cortometraje. Incluyó edición de diálogos, grabación y edición de Foley, diseño de atmósferas y mezcla para distribución en festivales de cine."
+              data-img="Caldito.png"
+              data-tags="Reaper,Sound Design,Foley,Mixing,Mastering"
+              data-link="https://drive.google.com/file/d/1zUhI4lvGTKSA_i88zTddWk7WEYjRy8lM/view">
+              <i class="fa-solid fa-arrow-up-right-from-square"></i> Más información
+            </button>
+          </div>
+        </div>
+
+        <!-- Proyecto 5 -->
+        <div class="project-card" data-aos="fade-up" data-aos-delay="100">
+          <div class="card-img-wrap">
+            <img src="Arpa.jpg" alt="Field Recording">
+          </div>
+          <div class="card-body">
+            <h3>Arpa Láser</h3>
+            <p>Creación, programación y construcción de una Arpa Láser polifónica</p>
+            <div class="card-tags">
+              <span class="card-tag">PlugData</span>
+              <span class="card-tag">DSP</span>
+              <span class="card-tag">Circuits</span>
+              <span class="card-tag">Audio Programming</span>
+            </div>
+            <button class="btn-demo" data-modal
+              data-title="Arpa Láser"
+              data-desc="Diseño de Arpa láser, con DSP en tiempo real por medio de Bela, posibilidades de cambiar de pentatonica, forma de onda y agregar efectos como tremolo, flanger, wah y chorus. Posibilidad de tocar todas las notas al tiempo y editar su ADSR."
+              data-img="Plugdata.png"
+              data-tags="DSP, PlugData, Bela, Circuits, Sound Design, Audio Programming"
+              data-link="https://drive.google.com/file/d/1fL8G4FY8ZcC7lIFPLiWnlabI6tKaQleK/view?usp=sharing">
+              <i class="fa-solid fa-arrow-up-right-from-square"></i> Más información
+            </button>
+          </div>
+        </div>
+
+        <!-- Proyecto 6 -->
+        <div class="project-card" data-aos="fade-up" data-aos-delay="200">
+          <div class="card-img-wrap">
+            <img src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=600&q=80" alt="Sintetizador Pure Data">
+          </div>
+          <div class="card-body">
+            <h3>Sintetizador en PlugData</h3>
+            <p>Desarrollo de sintetizador virtual en PlugData</p>
+            <div class="card-tags">
+              <span class="card-tag">PlugData</span>
+              <span class="card-tag">Synthesis</span>
+              <span class="card-tag">Audio Programming</span>
+              <span class="card-tag">DSP</span>
+            </div>
+            <button class="btn-demo" data-modal
+              data-title="Sintetizador Modular en Pure Data"
+              data-desc="Sintetizador virtual completamente en PlugData. Posibilidad de cambiar de formas de onda, cents, semitones. Cuenta con LFOs, filtros resonantes y capacidad de exportar audio en tiempo real."
+              data-img="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=800&q=80"
+              data-tags="PlugData, Synthesis, Audio Programming, DSP"
+              data-link="https://tu-demo-aqui.com">
+              <i class="fa-solid fa-arrow-up-right-from-square"></i> Más información
+            </button>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ════════════ MODAL DE PROYECTO ════════════ -->
+  <!--
+    Un solo modal reutilizable para los 6 proyectos.
+    El JS inyecta el contenido según el botón que se haya pulsado.
+  -->
+  <div id="modal-overlay" class="modal-overlay" role="dialog" aria-modal="true" aria-labelledby="modal-title">
+    <div class="modal-box">
+      <!-- Botón cerrar -->
+      <button id="modal-close" class="modal-close" aria-label="Cerrar modal">
+        <i class="fa-solid fa-xmark"></i>
+      </button>
+      <!-- Imagen -->
+      <div class="modal-img-wrap">
+        <img id="modal-img" src="" alt="">
+      </div>
+      <!-- Contenido -->
+      <div class="modal-content">
+        <h3 id="modal-title" class="modal-title"></h3>
+        <p  id="modal-desc"  class="modal-desc"></p>
+        <div id="modal-tags" class="modal-tags"></div>
+        <a  id="modal-link"  href="#" target="_blank" rel="noopener" class="modal-link-btn">
+          <i class="fa-solid fa-arrow-up-right-from-square"></i> Abrir proyecto completo
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- ════════════ CONTACTO ════════════ -->
+  <section id="contacto">
+    <div class="contacto-inner">
+      <h2 class="section-title" data-aos="fade-up">Contacto</h2>
+      <div class="contacto-grid">
+        <div class="contacto-img-wrap" data-aos="fade-right">
+          <img src="Mifoto.jpg" alt="Jerónimo Cardona">
+        </div>
+        <!-- Formulario -->
+        <div class="form-card" data-aos="fade-right">
+          <h3>Envíame un mensaje</h3>
+          <form id="contact-form" action="https://formspree.io/f/mdajpggk" method="POST">
+            <div class="form-group">
+              <label for="nombre">Nombre</label>
+              <input type="text" id="nombre" name="nombre" class="form-input" placeholder="Tu nombre" required>
+            </div>
+            <div class="form-group">
+              <label for="email">Email</label>
+              <input type="email" id="email" name="email" class="form-input" placeholder="tu@email.com" required>
+            </div>
+            <div class="form-group">
+              <label for="mensaje">Mensaje</label>
+              <textarea id="mensaje" name="mensaje" class="form-input" rows="4" placeholder="Cuéntame sobre tu proyecto..." required></textarea>
+            </div>
+            <button type="submit" id="btn-enviar" class="btn-submit">
+              Enviar Mensaje <i class="fa-solid fa-paper-plane"></i>
+            </button>
+          </form>
+        </div>
+
+        <!-- Info de contacto -->
+        <div class="contact-info" data-aos="fade-left">
+          <h3>Información de Contacto</h3>
+          <div class="contact-item">
+            <div class="contact-icon"><i class="fa-solid fa-envelope"></i></div>
+            <div>
+              <small>Email</small>
+              <span>cardonajeronimo08@gmail.com</span>
+            </div>
+          </div>
+
+          <p class="social-title">Redes Sociales</p>
+          <div class="social-row">
+
+            <a href="https://www.linkedin.com/in/jeronimo-cardona-a565aa3b0/"
+               target="_blank" rel="noopener"
+               class="social-btn" aria-label="LinkedIn">
+              <i class="fa-brands fa-linkedin-in"></i>
+            </a>
+          </div>
+
+          <div class="collab-card">
+            <h4>¿Listo para colaborar?</h4>
+            <p>Estoy siempre abierto a nuevos proyectos y colaboraciones interesantes. No dudes en contactarme para discutir cómo podemos trabajar juntos.</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="footer-inner">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="#inicio" class="nav-logo gradient-text">Sound Portfolio</a>
+          <p>Creando experiencias sonoras inmersivas para videojuegos, cine y medios audiovisuales.</p>
+          <div class="footer-social-row">
+            <a href="https://www.linkedin.com/in/jeronimo-cardona-a565aa3b0/"
+               target="_blank" rel="noopener"
+               class="footer-social-btn" aria-label="LinkedIn">
+              <i class="fa-brands fa-linkedin-in"></i>
+            </a>
+          </div>
+        </div>
+        <div class="footer-col">
+          <h4>Links Rápidos</h4>
+          <ul>
+            <li><a href="#inicio">Inicio</a></li>
+            <li><a href="#sobre-mi">Sobre Mí</a></li>
+            <li><a href="#habilidades">Habilidades</a></li>
+            <li><a href="#proyectos">Proyectos</a></li>
+            <li><a href="#contacto">Contacto</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Contacto</h4>
+          <ul>
+            <li><span>cardonajeronimo08@gmail.com</span></li>
+            <li><span>Medellín, Colombia</span></li>
+            <li><span>Disponible para proyectos freelance</span></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        © 2026 Jerónimo Cardona. Hecho con <span class="heart">❤</span> y mucho audio.
+      </div>
+    </div>
+  </footer>
+
+  <div id="toast"></div>
+
+  <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+  <script src="script.js"></script>
+
+</body>
+</html>
