@@ -1,11 +1,5 @@
-/* ════════════════════════════════════════
-   SOUND PORTFOLIO — styles.css
-   ════════════════════════════════════════ */
-
-/* ── Google Fonts ── */
 @import url('https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Sans:wght@300;400;500&display=swap');
 
-/* ── Reset & base ── */
 *, *::before, *::after { box-sizing: border-box; }
 
 html {
@@ -24,11 +18,6 @@ h1, h2, h3, h4, nav {
   font-family: 'Syne', sans-serif;
 }
 
-/* ════════════════════════════════════════
-   UTILIDADES GLOBALES
-   ════════════════════════════════════════ */
-
-/* Texto con gradiente morado */
 .gradient-text {
   background: linear-gradient(135deg, #6D28D9, #9333EA, #7C3AED);
   -webkit-background-clip: text;
@@ -36,7 +25,6 @@ h1, h2, h3, h4, nav {
   background-clip: text;
 }
 
-/* Línea decorativa bajo títulos de sección */
 .section-title {
   text-align: center;
   font-size: 2.25rem;
@@ -52,10 +40,6 @@ h1, h2, h3, h4, nav {
   border-radius: 2px;
   margin: 12px auto 0;
 }
-
-/* ════════════════════════════════════════
-   NAVBAR
-   ════════════════════════════════════════ */
 
 #navbar {
   position: fixed;
@@ -117,7 +101,6 @@ h1, h2, h3, h4, nav {
 .nav-link:hover::after,
 .nav-link.active::after { width: 100%; }
 
-/* Hamburger button */
 #hamburger {
   display: none;
   flex-direction: column;
@@ -135,7 +118,6 @@ h1, h2, h3, h4, nav {
   transition: transform 0.3s, opacity 0.3s;
 }
 
-/* Mobile menu */
 #mobile-menu {
   display: none;
   flex-direction: column;
@@ -164,10 +146,6 @@ h1, h2, h3, h4, nav {
   color: #374151;
   font-weight: 500;
 }
-
-/* ════════════════════════════════════════
-   HERO
-   ════════════════════════════════════════ */
 
 #inicio {
   /* Capa oscura encima de la foto para que el texto sea legible */
@@ -260,10 +238,6 @@ h1, h2, h3, h4, nav {
   50% { transform: translateY(8px); }
 }
 
-/* ════════════════════════════════════════
-   SOBRE MÍ
-   ════════════════════════════════════════ */
-
 #sobre-mi {
   padding: 6rem 1.5rem;
   background: #fff;
@@ -313,10 +287,6 @@ h1, h2, h3, h4, nav {
 }
 .sobre-text p { margin-bottom: 1.25rem; }
 .sobre-text p:last-child { margin-bottom: 0; }
-
-/* ════════════════════════════════════════
-   HABILIDADES
-   ════════════════════════════════════════ */
 
 #habilidades {
   padding: 6rem 1.5rem;
@@ -391,10 +361,6 @@ h1, h2, h3, h4, nav {
   border-color: #7C3AED;
   color: #7C3AED;
 }
-
-/* ════════════════════════════════════════
-   PROYECTOS
-   ════════════════════════════════════════ */
 
 #proyectos {
   padding: 6rem 1.5rem;
@@ -478,10 +444,6 @@ h1, h2, h3, h4, nav {
   transition: opacity 0.2s;
 }
 .btn-demo:hover { opacity: 0.88; }
-
-/* ════════════════════════════════════════
-   CONTACTO
-   ════════════════════════════════════════ */
 
 #contacto {
   padding: 6rem 1.5rem;
@@ -643,10 +605,6 @@ textarea.form-input { resize: none; }
   margin: 0;
 }
 
-/* ════════════════════════════════════════
-   FOOTER
-   ════════════════════════════════════════ */
-
 footer {
   background: #0f172a;
   color: #94a3b8;
@@ -724,10 +682,6 @@ footer {
 }
 .footer-bottom .heart { color: #f87171; }
 
-/* ════════════════════════════════════════
-   TOAST
-   ════════════════════════════════════════ */
-
 #toast {
   position: fixed;
   bottom: 2rem; right: 2rem;
@@ -746,10 +700,6 @@ footer {
 }
 #toast.show { opacity: 1; transform: translateY(0); }
 
-/* ════════════════════════════════════════
-   RESPONSIVE — TABLET (≥ 768px)
-   ════════════════════════════════════════ */
-
 @media (min-width: 768px) {
   .skills-grid       { grid-template-columns: repeat(3, 1fr); }
   .projects-grid     { grid-template-columns: repeat(2, 1fr); }
@@ -758,17 +708,9 @@ footer {
   .footer-grid       { grid-template-columns: 1.4fr 1fr 1fr; }
 }
 
-/* ════════════════════════════════════════
-   RESPONSIVE — DESKTOP (≥ 1024px)
-   ════════════════════════════════════════ */
-
 @media (min-width: 1024px) {
   .projects-grid { grid-template-columns: repeat(3, 1fr); }
 }
-
-/* ════════════════════════════════════════
-   RESPONSIVE — MOBILE (< 768px)
-   ════════════════════════════════════════ */
 
 @media (max-width: 767px) {
   #hamburger { display: flex; }
@@ -776,15 +718,6 @@ footer {
   #mobile-menu { display: flex; }
 }
 
-/* ════════════════════════════════════════
-   MODAL DE PROYECTO
-   ════════════════════════════════════════ */
-
-/*
-  Fondo oscuro semitransparente que cubre toda la pantalla.
-  Por defecto está oculto (opacity:0, pointer-events:none).
-  Cuando el JS añade la clase .visible se hace visible con transición.
-*/
 .modal-overlay {
   position: fixed;
   inset: 0;                          /* top:0 right:0 bottom:0 left:0 */
@@ -912,10 +845,6 @@ footer {
   .modal-content { padding: 1.25rem; }
 }
 
-/* ════════════════════════════════════════
-   IMAGEN DECORATIVA EN CONTACTO
-   ════════════════════════════════════════ */
-
 .contacto-img-wrap {
   flex: 1;
   display: flex;
@@ -928,7 +857,6 @@ footer {
   max-width: 380px;
   height: 480px;
   object-fit: cover;        /* recorta sin deformar */
-  object-position: top;     /* enfoca la parte de arriba (cara) */
   border-radius: 20px;
   box-shadow: 0 20px 50px rgba(124, 58, 237, 0.15);
   /* Borde degradado morado */
@@ -937,7 +865,6 @@ footer {
   border: 3px solid #7C3AED22;
 }
 
-/* En móvil la imagen va arriba del formulario y es más pequeña */
 @media (max-width: 767px) {
   .contacto-img-wrap img {
     height: 280px;
@@ -945,7 +872,6 @@ footer {
   }
 }
 
-/* En desktop la imagen y el formulario van side by side */
 @media (min-width: 768px) {
   .contacto-grid {
     align-items: stretch;
