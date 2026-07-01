@@ -50,24 +50,35 @@ function abrirModal(boton) {
   const titulo      = boton.dataset.title;
   const descripcion = boton.dataset.desc;
   const imagen      = boton.dataset.img;
-  const tags        = boton.dataset.tags.split(',');   // "Wwise,DSP" → ["Wwise", "DSP"]
+  const tags        = boton.dataset.tags.split(',');
   const link        = boton.dataset.link;
 
   modalImg.src       = imagen;
   modalImg.alt       = titulo;
   modalTitle.textContent = titulo;
   modalDesc.textContent  = descripcion;
-  modalLink.href         = link;
   modalTags.innerHTML = tags
     .map(tag => `<span class="modal-tag">${tag.trim()}</span>`)
     .join('');
+
+  // Solo mostrar el botón si hay un link real (no vacío ni placeholder)
+  const linkValido = link && link.trim() !== '' && !link.includes('Proximamente-video-demo');
+
+  if (linkValido) {
+    modalLink.href = link;
+    modalLink.style.display = 'inline-flex'; // usa el display que ya tenga tu CSS
+  } else {
+    modalLink.removeAttribute('href');
+    modalLink.style.display = 'none';
+  }
+
   modalOverlay.classList.add('visible');
   document.body.style.overflow = 'hidden';
 }
 
 function cerrarModal() {
   modalOverlay.classList.remove('visible');
-  document.body.style.overflow = ''; // restaurar scroll
+  document.body.style.overflow = '';
 }
 
 // Asignar el evento click a TODOS los botones "Ver Demo"
